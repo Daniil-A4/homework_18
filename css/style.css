@@ -1,0 +1,651 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: "";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-size: 14px;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background: #000729;
+}
+
+.road {
+  width: 162%;
+  height: 470px;
+  background-color: #504f4f;
+  position: relative;
+  top: -480px;
+}
+
+.road__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 600%;
+  height: 5px;
+  border: 5px dashed #fafafa;
+  -webkit-animation-name: road;
+          animation-name: road;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 15.5s;
+          animation-delay: 15.5s;
+}
+
+@-webkit-keyframes road {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -2000px;
+  }
+}
+
+@keyframes road {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -2000px;
+  }
+}
+
+._no-webp .city {
+  background: url("../img/city-removebg-preview.png"); }
+
+.city {
+  position: relative;
+  width: 420%;
+  height: 400px;
+  left: 0px;
+  -webkit-animation-name: city;
+          animation-name: city;
+  -webkit-animation-duration: 27s;
+          animation-duration: 27s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 15.5s;
+          animation-delay: 15.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes city {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -2000px;
+  }
+}
+
+@keyframes city {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -2000px;
+  }
+}
+
+._no-webp .clouds__item1 {
+  background: url("../img/cloud-removebg-preview.png") center; }
+
+.clouds__item1 {
+  opacity: 0.7;
+  position: absolute;
+  top: -70px;
+  z-index: 111;
+  width: 400px;
+  height: 300px;
+  -webkit-animation-name: item1;
+          animation-name: item1;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes item1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: skew(0 0);
+            transform: skew(0 0);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: skew(2deg, 4deg);
+            transform: skew(2deg, 4deg);
+  }
+}
+
+@keyframes item1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: skew(0 0);
+            transform: skew(0 0);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: skew(2deg, 4deg);
+            transform: skew(2deg, 4deg);
+  }
+}
+
+._no-webp .clouds__item2 {
+  background: url("../img/cloud2-removebg-preview.png"); }
+
+.clouds__item2 {
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 600px;
+  width: 300px;
+  height: 250px;
+  -webkit-animation-name: item2;
+          animation-name: item2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes item2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: translate(-10px 0);
+            transform: translate(-10px 0);
+  }
+
+  100% {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+    -webkit-transform: translate(10px 0);
+            transform: translate(10px 0);
+  }
+}
+
+@keyframes item2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: translate(-10px 0);
+            transform: translate(-10px 0);
+  }
+
+  100% {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+    -webkit-transform: translate(10px 0);
+            transform: translate(10px 0);
+  }
+}
+
+._no-webp .clouds__item3 {
+  background: url("../img/cloud4-removebg-preview.png"); }
+
+.clouds__item3 {
+  opacity: 0.6;
+  position: relative;
+  top: -550px;
+  left: 1000px;
+  width: 2500px;
+  height: 450px;
+  -webkit-animation-name: item3;
+          animation-name: item3;
+  -webkit-animation-duration: 64s;
+          animation-duration: 64s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes item3 {
+  0% {
+    left: 1000px;
+  }
+
+  100% {
+    left: -1100px;
+  }
+}
+
+@keyframes item3 {
+  0% {
+    left: 1000px;
+  }
+
+  100% {
+    left: -1100px;
+  }
+}
+
+.car {
+  position: relative;
+  bottom: 920px;
+  left: -1200px;
+  -webkit-animation-name: car, carstop, cardtive, cargo;
+          animation-name: car, carstop, cardtive, cargo;
+  -webkit-animation-duration: 3s, 6s, 8s, 30.5s;
+          animation-duration: 3s, 6s, 8s, 30.5s;
+  -webkit-animation-iteration-count: 1, 1, infinite, 1;
+          animation-iteration-count: 1, 1, infinite, 1;
+  -webkit-animation-direction: normal, normal, normal;
+          animation-direction: normal, normal, normal;
+  -webkit-animation-delay: 0s, 1s, 5s, 7s;
+          animation-delay: 0s, 1s, 5s, 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, normal, normal, alternate;
+          animation-direction: normal, normal, normal, alternate;
+  -webkit-animation-play-state: running, running, running;
+          animation-play-state: running, running, running;
+}
+
+@-webkit-keyframes car {
+  0% {
+    left: -1050px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes car {
+  0% {
+    left: -1050px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes carstop {
+  20% {
+    left: 0px;
+  }
+
+  30% {
+    left: 0px;
+  }
+}
+
+@keyframes carstop {
+  20% {
+    left: 0px;
+  }
+
+  30% {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes cardrive {
+  30% {
+    left: 0px;
+  }
+
+  80% {
+    left: 0px;
+  }
+}
+
+@keyframes cardrive {
+  30% {
+    left: 0px;
+  }
+
+  80% {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes cargo {
+  80% {
+    left: 0px;
+  }
+
+  100% {
+    left: 1900px;
+  }
+}
+
+@keyframes cargo {
+  80% {
+    left: 0px;
+  }
+
+  100% {
+    left: 1900px;
+  }
+}
+
+.car__backside {
+  position: absolute;
+  bottom: 0;
+}
+
+.car__front {
+  position: absolute;
+  bottom: 30px;
+  left: 500px;
+}
+
+.backside__item-red {
+  display: inline-block;
+  position: absolute;
+  bottom: 31px;
+  left: 173px;
+  width: 160px;
+}
+
+.backside__wheel {
+  position: absolute;
+  bottom: 0px;
+  left: 178px;
+  width: 150px;
+  -webkit-animation-name: wheel, wheel;
+          animation-name: wheel, wheel;
+  -webkit-animation-duration: 0.8s, 0.5s;
+          animation-duration: 0.8s, 0.5s;
+  -webkit-animation-iteration-count: 2, infinite;
+          animation-iteration-count: 2, infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s, 15.6s;
+          animation-delay: 0s, 15.6s;
+}
+
+@-webkit-keyframes wheel {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheel {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.front__item-red {
+  position: absolute;
+  bottom: 2px;
+  left: 260px;
+  width: 160px;
+}
+
+.front__wheel {
+  position: absolute;
+  bottom: -30px;
+  left: 267px;
+  width: 150px;
+  -webkit-animation-name: wheel, wheel;
+          animation-name: wheel, wheel;
+  -webkit-animation-duration: 0.8s, 0.5s, 0.3s;
+          animation-duration: 0.8s, 0.5s, 0.3s;
+  -webkit-animation-iteration-count: 2, infinite;
+          animation-iteration-count: 2, infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-delay: 0s, 15.6s;
+          animation-delay: 0s, 15.6s;
+}
+
+@keyframes wheel {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+._no-webp .smoke {
+  background: url("../img/smoke-removebg-preview.png") center no-repeat; }
+
+.smoke {
+  position: absolute;
+  bottom: -47px;
+  left: -620px;
+  width: 700px;
+  height: 300px;
+  -webkit-animation-name: smoke;
+          animation-name: smoke;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+}
+
+@-webkit-keyframes smoke {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+
+  100% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
+
+@keyframes smoke {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+
+  100% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
+
+._webp .city { background: url(../img/city-removebg-preview.webp); }
+
+._webp .clouds__item1 { background: url(../img/cloud-removebg-preview.webp) center; }
+
+._webp .clouds__item2 { background: url(../img/cloud2-removebg-preview.webp); }
+
+._webp .clouds__item3 { background: url(../img/cloud4-removebg-preview.webp); }
+
+._webp .smoke { background: url(../img/smoke-removebg-preview.webp) center no-repeat; }
